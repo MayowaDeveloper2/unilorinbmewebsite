@@ -40,10 +40,10 @@ export default async function PostCard({ post }: { post: Post }) {
         </div>
         <div
           dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-          className="text-xl text-primary font-medium group-hover:underline decoration-muted-foreground underline-offset-4 decoration-dotted transition-all"
+          className="text-xl text-black text-primary font-medium group-hover:underline decoration-muted-foreground underline-offset-4 decoration-dotted transition-all"
         ></div>
         <div
-          className="text-sm"
+          className="text-sm text-black"
           dangerouslySetInnerHTML={{
             __html:
               post.excerpt.rendered.split(" ").slice(0, 12).join(" ").trim() +
@@ -54,7 +54,7 @@ export default async function PostCard({ post }: { post: Post }) {
 
       <div className="flex flex-col gap-4">
         <hr />
-        <div className="flex justify-between items-center text-xs">
+        <div className="flex text-black justify-between items-center text-xs">
           <p>{category.name}</p>
           <p>{date}</p>
         </div>

@@ -79,9 +79,9 @@ export default function Bodysection() {
                                     1ST Department Lecture, Symposium, and Biomedical Engineering Exhibition (BMEX)
                                 </div>
                                 <hr className="h-px my-8 border-0 dark:bg-gray-700"></hr>
-                                <div className="w-full pl-4 flex">
+                                <div className="w-full text-black pl-4 flex">
                                     <span className="flex items-center mr-7"> 
-                                        <FaRegCalendarDays className="mr-2"/> 2 - 4 August, 2024
+                                        <FaRegCalendarDays className="mr-2 "/> 2 - 4 August, 2024
                                     </span>
                                     <span className="flex items-center">
                                         <GoClock className="mr-2"/> 10:00am
@@ -103,7 +103,7 @@ export default function Bodysection() {
                             <div className="mt-7 text-white lg:mt-96">
                                 <div className="font-bold">Dooter Aondoakaa</div>
                                 <div>Biomedical Engineering, class of 2023</div>
-                                <button className="border-customeYellow mt-4 border px-2 py-1">FULL PROFILE</button>
+                                <button className="border-customeYellow mt-4 mb-4 border px-2 py-1">FULL PROFILE</button>
                             </div>
 
                         </div>
