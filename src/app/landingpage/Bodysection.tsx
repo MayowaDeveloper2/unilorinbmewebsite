@@ -12,8 +12,8 @@ import ourinnovations from "../images/a-travel-mobility-scooter-with-a-shopping-
 import bmeevent from "../images/bme event.jpg";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { GoClock } from "react-icons/go";
-import { FaQuoteLeft } from "react-icons/fa";
-import dooter from "../images/dooter.jpeg";
+// import { FaQuoteLeft } from "react-icons/fa";
+// import dooter from "../images/dooter.jpeg";
 import Newspost from "./news";
 
 
@@ -73,7 +73,7 @@ export default function Bodysection() {
                             <Image src={bmeevent} alt="" className="lg:w-[400px] mb-4 rounded-3xl lg:mb-0" />
                             <div className="flex flex-col lg:items-center lg:justify-center lg:ml-4">
                                 <div className="text-lg text-black font-semibold mb-4 lg:mb-0 lg:mr-4">
-                                    1ST Department Lecture, Symposium, and Biomedical Engineering Exhibition (BMEX)
+                                    1ST Department Lecture, Symposium, and Biomedical Engineering Exhibition
                                 </div>
                                 <hr className="h-px my-8 border-0 dark:bg-gray-700"></hr>
                                 <div className="w-full pl-4 flex">
@@ -108,7 +108,7 @@ export default function Bodysection() {
                 </div> */}
                 <div className="mt-5 px-5 lg:px-20">
                     <div>
-                        <div className="text-2xl text-black font-bold mb-4 ml-4">NEWS</div>
+                        <div className="text-2xl text-black font-bold mb-4 ml-4"> NEWS </div>
                         <Newspost/>
                     </div>
                 </div>
