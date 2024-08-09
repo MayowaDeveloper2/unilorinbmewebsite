@@ -123,7 +123,7 @@ export default function Bodysection() {
                             allowFullScreen
                             src="https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1&mute=1"
                         />
-                        <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl font-bold mt-4 lg:mt-0">Welcome Message From The Head of Department of Biomedical Engineering</div>
+                        <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">Welcome Message From The Head of Department of Biomedical Engineering</div>
 
                     </div>
                 </div>
