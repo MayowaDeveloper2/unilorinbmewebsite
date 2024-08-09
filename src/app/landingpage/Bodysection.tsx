@@ -96,7 +96,7 @@ export default function Bodysection() {
                         <div className="flex-col px-3">
                             <div className="text-white lg:text-2xl font-bold mt-3">Student Spotlight</div>
                             <FaQuoteLeft className="text-customeYellow text-5xl mt-7"/>
-                            <span className="w-[300px] lg:text-4xl text-white"> Pursing a degree in Biomedical Engineering at Univerisity of Ilorin has taught me to be resilence as the course seem highly technical. I want to make lasting solution to problens in the healthcare sector with my skills acquired in Bioinformatics, and others"</span>
+                            <span className="w-[300px] lg:text-4xl text-white"> Pursing a degree in Biomedical Engineering at Univerisity of Ilorin has taught me to be resilence as the course seem highly technical. I want to make lasting solution to problens in the healthcare sector with my skills acquired in Bioinformatics, and others</span>
                             <div className="mt-7 text-white lg:mt-96">
                                 <div className="font-bold">Dooter Aondoakaa</div>
                                 <div>Biomedical Engineering, class of 2023</div>
