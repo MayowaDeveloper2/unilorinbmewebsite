@@ -90,12 +90,12 @@ export default function Bodysection() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row bg-customBlue">
+                {/* <div className="flex flex-col lg:flex-row bg-customBlue">
                     <div className="flex flex-col lg:flex-row">
                         <Image className="lg:w-[800px]" src={dooter} alt="dooter" />
                         <div className="flex-col px-3">
                             <div className="text-white lg:text-2xl font-bold mt-3">Student Spotlight</div>
-                            {/* <FaQuoteLeft className="text-customeYellow text-5xl mt-7"/> */}
+                            <FaQuoteLeft className="text-customeYellow text-5xl mt-7"/> 
                             <span className="w-[300px] lg:text-4xl text-white"> Pursing a degree in Biomedical Engineering at Univerisity of Ilorin has taught me to be resilence as the course seem highly technical. I want to make lasting solution to problens in the healthcare sector with my skills acquired in Bioinformatics, and others</span>
                             <div className="mt-7 text-white lg:mt-96">
                                 <div className="font-bold">Dooter Aondoakaa</div>
@@ -105,7 +105,7 @@ export default function Bodysection() {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="mt-5 px-5 lg:px-20">
                     <div>
                         <div className="text-2xl text-black font-bold mb-4 ml-4">NEWS</div>
