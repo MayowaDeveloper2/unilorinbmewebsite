@@ -21,7 +21,7 @@ import Newspost from "./news";
 const cardimages = [
     { src: cardimage1, alt: "cardimage", content: "Prospective Students" },
     { src: cardimage2, alt: "cardimage", content: "Current Students" },
-    { src: cardimage3, alt: "cardimage", content: "Faculty & Research" },
+    { src: cardimage3, alt: "cardimage", content: "Faculty  Research" },
     { src: cardimage4, alt: "cardimage", content: "Alumni Stories" },
     { src: cardimage5, alt: "cardimage", content: "Student Stories" },
 ];
@@ -78,7 +78,7 @@ export default function Bodysection() {
                                 <hr className="h-px my-8 border-0 dark:bg-gray-700"></hr>
                                 <div className="w-full pl-4 flex">
                                     <span className="flex items-center mr-7"> 
-                                        <FaRegCalendarDays className="mr-2"/> 2 - 4 August, 2024
+                                        <FaRegCalendarDays className="mr-2"/> 2  4 August, 2024
                                     </span>
                                     <span className="flex items-center">
                                         <GoClock className="mr-2"/> 10:00am
