@@ -33,7 +33,7 @@ export default function Bodysection() {
         <>
             
             <div>
-                <div className="flex lg:items-center lg:justify-center lg:mt-10 flex-row overflow-x-auto space-x-4 p-4">
+                <div className="flex lg:items-center lg:justify-center lg:mt-10 flex-row no-scrollbar overflow-x-auto space-x-4 p-4">
                     {cardimages.map((cardimage, index) => (
                         <div key={index} className="relative min-w-[300px] h-[200px]">
                             <Image
@@ -78,7 +78,7 @@ export default function Bodysection() {
                                 <div className="text-lg text-black font-semibold mb-4 lg:mb-0 lg:mr-4">
                                     1ST Department Lecture, Symposium, and Biomedical Engineering Exhibition (BMEX)
                                 </div>
-                                <hr className="h-px my-8 border-0 dark:bg-gray-700"></hr>
+                                <div className="border-b-2 border-gray-300 my-4"></div>
                                 <div className="w-full text-black pl-4 flex">
                                     <span className="flex items-center mr-7"> 
                                         <FaRegCalendarDays className="mr-2 "/> 2 - 4 August, 2024
@@ -121,7 +121,7 @@ export default function Bodysection() {
                             className="w-[300px] lg:w-[700px] md:w-[400px] rounded-3xl h-64 md:h-80 lg:h-96"
                             allow="autoplay; fullscreen"
                             allowFullScreen
-                            src="https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1&mute=1"
+                            src="https://www.youtube.com/embed/6YIGQDq-BPY?si=3HgPSCHOsvYTyaLp?autoplay=1"
                         />
                         <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">Welcome Message From The Head of Department of Biomedical Engineering</div>
 
