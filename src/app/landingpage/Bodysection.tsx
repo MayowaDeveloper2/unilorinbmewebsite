@@ -33,7 +33,7 @@ export default function Bodysection() {
         <>
             
             <div>
-                <div className="flex lg:items-center lg:justify-center lg:mt-10 flex-row no-scrollbar overflow-x-auto space-x-4 p-4 px-20">
+                <div className="flex lg:items-center lg:justify-center lg:mt-10 flex-row no-scrollbar overflow-x-auto gap-4 px-20">
                     {cardimages.map((cardimage, index) => (
                         <div key={index} className="relative min-w-[300px] h-[200px]">
                             <Image
