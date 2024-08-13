@@ -49,8 +49,8 @@ export default function Bodysection() {
             <div>
                 <div className="w-full mt-4 mb-4 flex flex-col md:flex-row lg:pl-10">
                     <div className="lg:w-1/2 w-full md:w-full ">
-                        <div className='josefin text-4xl'>For the benefit of advancing careers in health care</div>
-                        <div className='roboto text-[20px]'>We help young individual soars by advancing careers in health care through innovations and excellence</div>
+                        <div className='josefin text-4xl text-black'>For the benefit of advancing careers in health care</div>
+                        <div className='roboto text-[20px] text-black'>We help young individual soars by advancing careers in health care through innovations and excellence</div>
                     </div>
                     <div className="lg:w-1/2 md:w-full  flex-row flex overflow-x-auto no-scrollbar relative">
                         {currentCard > 0 && (
