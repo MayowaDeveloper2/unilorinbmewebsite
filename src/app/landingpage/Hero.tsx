@@ -64,7 +64,7 @@ export default function Hero() {
                             </li>
                         </ul>
                     </div>
-                    <div className='bg-customBlue text-white pt-3'>
+                    <div className='bg-customBlue roboto text-white pt-3 p-5'>
                         {images[activeIndex].content}
                     </div>
                 </div>
@@ -85,7 +85,7 @@ export default function Hero() {
                         </li>
                     </ul>
                 </div>
-                <div className='bg-customBlue text-white pt-3'>
+                <div className='bg-customBlue text-white pt-3 px-3'>
                     {images[activeIndex].content}
                 </div>
             </div>
@@ -99,12 +99,12 @@ export default function Hero() {
                     height: 0;
                     border-left: 100vw solid transparent;
                     border-right: 100vw solid transparent;
-                    border-bottom: 90px solid #002145; /* Default color for smaller screens */
+                    border-bottom: 90px solid #002145; 
                 }
 
                 @media (min-width: 1024px) {
                     .triangle-divider {
-                        border-bottom-color: white; /* White color for desktop screens */
+                        border-bottom-color: white;
                     }
                 }
             `}</style>

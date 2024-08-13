@@ -5,7 +5,7 @@ import unilorinlogo from "../images/better by far.png";
 export default function Footer() {
     return (
         <>
-            <footer className="bg-customBrown py-6 mx-auto w-full">
+            <footer className="bg-customBrown py-6 mx-auto w-full mt-6">
                 <div className="flex flex-col items-center">
                     <Image className="w-[180px] h-[60px]" src={unilorinlogo} alt="" />
                     <div className="w-[300px] lg:w-[700px] text-4xl mt-6 font-bold text-black text-center">University of Ilorin</div>

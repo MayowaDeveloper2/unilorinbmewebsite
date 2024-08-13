@@ -47,18 +47,18 @@ export default function Bodysection() {
     return (
         <>
             <div>
-                <div className="w-full mt-4 mb-4 flex flex-col md:flex-row lg:pl-10">
-                    <div className="lg:w-1/2 w-full md:w-full ">
-                        <div className='josefin text-4xl text-black'>For the benefit of advancing careers in health care</div>
-                        <div className='roboto text-[20px] text-black'>We help young individual soars by advancing careers in health care through innovations and excellence</div>
+                <div className="w-full mt-4 mb-4 flex flex-col md:flex-row mx-auto lg:pl-10">
+                    <div className="lg:w-1/2 w-full md:w-full mb-2">
+                        <div className='josefin text-6xl text-black px-3'>For the benefit of advancing careers in health care</div>
+                        <div className='roboto text-[20px] text-black px-3 mt-4'>We help young individual soars by advancing careers in health care through innovations and excellence</div>
                     </div>
-                    <div className="lg:w-1/2 md:w-full  flex-row flex overflow-x-auto no-scrollbar relative">
+                    <div className="lg:w-1/2 md:w-full mt-3 flex-row flex overflow-x-auto no-scrollbar relative">
                         {currentCard > 0 && (
                             <div className='absolute left-0 z-10 hidden lg:block top-1/2 transform -translate-y-1/2'>
                                 <BiSolidChevronLeftCircle size={40} onClick={prevCard} className='text-white' />
                             </div>
                         )}
-                        <div className="flex flex-row relative">
+                        <div className="flex flex-row relative mt-3">
                             {cardimages.map((cardimage, index) => (
                                 <div
                                     className={`relative lg:min-w-[400px] min-w-[300px] h-[400px] ${index === 0 ? 'ml-10' : ''} ${index === cardimages.length - 1 ? 'mr-2 lg:mr-10' : 'lg:mr-5 mr-3'}`}
