@@ -143,7 +143,7 @@ export default function Bodysection() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-6 mb-6 w-full h-[400px] px-5 md:px-20 lg:px-20 flex">
+                <div className="mt-6 mb-6 w-full h-[400px] px-2 md:px-20 lg:px-20 flex">
                     <div className="flex h-full items-center flex-col lg:flex-row">
                         <iframe
                             className="w-[300px] lg:w-[700px] md:w-[400px] rounded-3xl h-64 md:h-80 lg:h-96"
@@ -151,7 +151,7 @@ export default function Bodysection() {
                             allowFullScreen
                             src="https://www.youtube.com/embed/6YIGQDq-BPY?si=3HgPSCHOsvYTyaLp?autoplay=1"
                         />
-                        <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">
+                        <div className="lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">
                             Welcome Message From The Head of Department of Biomedical Engineering
                         </div>
                     </div>
