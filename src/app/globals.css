@@ -37,4 +37,13 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+.roboto {
+  font-family: var(--font-roboto);
+}
+
+.josefin {
+  font-family: var(--font-josefin);
+}
+
+
 

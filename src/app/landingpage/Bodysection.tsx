@@ -1,7 +1,9 @@
 
 
 /* eslint-disable react/no-unescaped-entities */ 
+'use client'
 
+import React, {useState } from 'react';
 import Image from "next/image";
 import cardimage1 from "../images/image-beautiful-cheerful-girl-with-toothy-smile-writes-notes-notebook-with-pencil.jpg";
 import cardimage2 from "../images/friends-learning-study-group.jpg";
@@ -16,7 +18,15 @@ import { FaRegCalendarDays } from "react-icons/fa6";
 import { GoClock } from "react-icons/go";
 import { FaQuoteLeft } from "react-icons/fa";
 import dooter from "../images/dooter.jpeg";
-import Newspost from "./news";
+import { Sriracha } from "next/font/google";
+import { Poppins } from 'next/font/google'
+import arrowright from "../images/arrowright.png";
+import { BiSolidChevronRightCircle, BiSolidChevronLeftCircle } from 'react-icons/bi';
+
+const poppins = Poppins ({
+    weight: '400',
+    subsets: ['latin'],
+  })
 
 
 
@@ -29,25 +39,50 @@ const cardimages = [
 ];
 
 export default function Bodysection() {
+
+    const [currentCard, setcurrentCard ] = useState<number>(0); 
+
+    const nextCard = () => {
+        setcurrentCard((preindex) => (preindex < cardimages.length - 1 ? preindex + 1 : preindex));
+    }
+
+    const prevCard = () => {
+        setcurrentCard((preindex) => (preindex > 0 ? preindex - 1 : preindex))
+    }
     return (
         <>
             
             <div>
-                <div className="flex lg:items-center lg:justify-center lg:mt-10 flex-row no-scrollbar overflow-x-auto gap-4 px-20">
-                    {cardimages.map((cardimage, index) => (
-                        <div key={index} className="relative min-w-[300px] h-[200px]">
-                            <Image
-                                src={cardimage.src}
-                                alt={cardimage.alt}
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-3xl"
-                            />
-                            <span className="absolute bottom-[15px] right-[15px] text-white bg-black bg-opacity-50 px-2 py-1 rounded-lg">
-                                {cardimage.content}
-                            </span>
-                        </div>
-                    ))}
+                <div className="w-full flex flex-col md:flex-row lg:pl-10">
+                    <div className="w-1/2 josefin text-4xl">For the benefit of advancing careers in health care</div>
+                    <div 
+                         className="lg:w-1/2 flex-row flex overflow-x-auto no-scrollbar relative"
+                         
+                    
+                    >
+                        {currentCard > 0 && (
+                            <div className='absolute  left-0 z-10 hidden lg:block top-1/2 transform -translate-y-1/2'>
+                                <BiSolidChevronLeftCircle size={30} onClick={prevCard}/>
+                            </div>
+                        )}
+                        {cardimages.map((cardimage, index) => (
+                            <div className={`relative min-w-[400px] h-[300px] ${index === 0 ? 'ml-10' : ''} mr-3`} key={index} 
+                                style={{
+                                    transform: `translateX(-${currentCard * 100}%)`,
+                                    transition: 'transform 0.5s ease-in-out',
+                            }}>
+                                <Image className="rounded-3xl w-full h-full object-cover" src={cardimage.src} alt={cardimage.alt} />
+                                <button className="px-3 bottom-2 left-5 absolute py-2 bg-black text-white flex items-center">{cardimage.content} <Image className="w-[30px] h-[30px]" src={arrowright} alt="arrow"/></button>
+                            </div>
+                        ))}
+                        {currentCard < cardimages.length - 1 && (
+                            <div className='absolute right-0 z-10 hidden lg:block top-1/2 transform -translate-y-1/2'>
+                                <BiSolidChevronRightCircle size={30} onClick={nextCard}/>
+                            </div>
+                        )}
+                        
+                    </div>
+                    
                 </div>
                 <div className="bg-customBlue flex w-full justify-center">
                     <div className="text-center justify-center w-full" >
@@ -109,13 +144,8 @@ export default function Bodysection() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-5 px-5 lg:px-20">
-                    <div>
-                        <div className="text-2xl text-black font-bold mb-4 ml-4">NEWS</div>
-                        <Newspost/>
-                    </div>
-                </div>
-                <div className="mt-6 mb-6 w-full h-[400px] px-5 md:px-3 lg:px-20  flex">
+                
+                {/* <div className="mt-6 mb-6 w-full h-[400px] px-5 md:px-20 lg:px-20   flex">
                     <div className="flex h-full items-center flex-col lg:flex-row">
                         <iframe
                             className="w-[300px] lg:w-[700px] md:w-[400px] rounded-3xl h-64 md:h-80 lg:h-96"
@@ -126,7 +156,7 @@ export default function Bodysection() {
                         <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">Welcome Message From The Head of Department of Biomedical Engineering</div>
 
                     </div>
-                </div>
+                </div> */}
                 
             </div>
         </>
