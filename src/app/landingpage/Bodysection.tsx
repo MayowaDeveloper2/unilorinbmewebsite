@@ -132,7 +132,7 @@ export default function Bodysection() {
                         <div className="flex-col px-3">
                             <div className="text-white lg:text-2xl font-bold mt-3">Student Spotlight</div>
                             <FaQuoteLeft className="text-customeYellow text-5xl mt-7" />
-                            <span className="w-[300px] lg:text-4xl text-white">
+                            <span className="w-[300px] lg:text-4xl roboto text-white">
                                 Pursuing a degree in Biomedical Engineering at the University of Ilorin has taught me to be resilient as the course seems highly technical. I want to make lasting solutions to problems in the healthcare sector with my skills acquired in Bioinformatics, and others
                             </span>
                             <div className="mt-7 text-white lg:mt-96">
@@ -140,6 +140,19 @@ export default function Bodysection() {
                                 <div>Biomedical Engineering, class of 2023</div>
                                 <button className="border-customeYellow mt-4 mb-4 border px-2 py-1">FULL PROFILE</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-6 mb-6 w-full h-[400px] px-5 md:px-20 lg:px-20 flex">
+                    <div className="flex h-full items-center flex-col lg:flex-row">
+                        <iframe
+                            className="w-[300px] lg:w-[700px] md:w-[400px] rounded-3xl h-64 md:h-80 lg:h-96"
+                            allow="autoplay; fullscreen"
+                            allowFullScreen
+                            src="https://www.youtube.com/embed/6YIGQDq-BPY?si=3HgPSCHOsvYTyaLp?autoplay=1"
+                        />
+                        <div className="w-[350px] lg:w-[600px] md:w-[400px] ml-5 text-2xl text-black font-bold mt-4 lg:mt-0">
+                            Welcome Message From The Head of Department of Biomedical Engineering
                         </div>
                     </div>
                 </div>
