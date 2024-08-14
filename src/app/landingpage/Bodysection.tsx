@@ -61,7 +61,7 @@ export default function Bodysection() {
                         <div className="flex flex-row relative mt-3">
                             {cardimages.map((cardimage, index) => (
                                 <div
-                                    className={`relative lg:min-w-[400px] min-w-[300px] h-[400px] ${index === 0 ? 'ml-10' : ''} ${index === cardimages.length - 1 ? 'mr-2 lg:mr-10' : 'lg:mr-5 mr-3'}`}
+                                    className={`relative lg:min-w-[350px] min-w-[300px] h-[400px] ${index === 0 ? 'ml-10' : ''} ${index === cardimages.length - 1 ? 'mr-2 lg:mr-10' : 'lg:mr-5 mr-3'}`}
                                     key={index}
                                     style={{
                                         transform: `translateX(-${currentCard * 85}%)`,
