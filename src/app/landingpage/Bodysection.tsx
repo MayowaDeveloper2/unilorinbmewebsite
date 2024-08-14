@@ -61,7 +61,7 @@ export default function Bodysection() {
                         <div className="flex flex-row relative mt-3">
                             {cardimages.map((cardimage, index) => (
                                 <div
-                                    className={`relative lg:min-w-[350px] min-w-[300px] h-[400px] ${index === 0 ? 'ml-10' : ''} ${index === cardimages.length - 1 ? 'mr-2 lg:mr-10' : 'lg:mr-5 mr-3'}`}
+                                    className={`relative md:min-w-[200px]  lg:min-w-[350px] min-w-[300px] h-[400px] ${index === 0 ? 'ml-10' : ''} ${index === cardimages.length - 1 ? 'mr-2 lg:mr-10' : 'lg:mr-5 mr-3'}`}
                                     key={index}
                                     style={{
                                         transform: `translateX(-${currentCard * 85}%)`,
@@ -126,7 +126,7 @@ export default function Bodysection() {
                     </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row bg-customBlue h-screen">
+                <div className="flex flex-col lg:flex-row bg-customBlue lg:h-screen h-full">
                     <div className="flex flex-col lg:flex-row">
                         <Image className="lg:w-[800px]" src={dooter} alt="dooter" />
                         <div className="flex-col px-3">
