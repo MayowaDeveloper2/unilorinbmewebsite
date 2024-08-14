@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Josefin_Sans } from "next/font/google";
+import { Roboto, Josefin_Sans, Bebas_Neue} from "next/font/google";
 import "./globals.css";
 
 const roboto_init = Roboto({
@@ -14,6 +14,11 @@ const josefin_sans_init = Josefin_Sans({
   variable: '--font-josefin',
 })
 
+const bebas_neue_init = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-bebas',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_init.variable} ${josefin_sans_init.variable}`}>{children}</body>
+      <body className={`${roboto_init.variable} ${josefin_sans_init.variable} ${bebas_neue_init.variable}`}>{children}</body>
     </html>
   );
 }

@@ -126,7 +126,7 @@ export default function Bodysection() {
                     </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row bg-customBlue">
+                <div className="flex flex-col lg:flex-row bg-customBlue h-screen">
                     <div className="flex flex-col lg:flex-row">
                         <Image className="lg:w-[800px]" src={dooter} alt="dooter" />
                         <div className="flex-col px-3">
@@ -135,9 +135,9 @@ export default function Bodysection() {
                             <span className="w-[300px] lg:text-4xl roboto text-white">
                                 Pursuing a degree in Biomedical Engineering at the University of Ilorin has taught me to be resilient as the course seems highly technical. I want to make lasting solutions to problems in the healthcare sector with my skills acquired in Bioinformatics, and others
                             </span>
-                            <div className="mt-7 text-white lg:mt-96">
+                            <div className="mt-7 text-white lg:mt-44">
                                 <div className="font-bold">Dooter Aondoakaa</div>
-                                <div>Biomedical Engineering, class of 2023</div>
+                                <div>Biomedical Engineering, class of 2026</div>
                                 <button className="border-customeYellow mt-4 mb-4 border px-2 py-1">FULL PROFILE</button>
                             </div>
                         </div>
