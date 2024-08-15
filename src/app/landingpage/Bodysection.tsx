@@ -2,6 +2,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import cardimage1 from '../images/prospectivestudnet.jpg';
 import cardimage2 from '../images/currentstudents.jpg';
@@ -26,11 +27,11 @@ const poppins = Poppins({
 });
 
 const cardimages = [
-    { src: cardimage1, alt: 'cardimage', content: 'Prospective Students' },
-    { src: cardimage2, alt: 'cardimage', content: 'Current Students' },
-    { src: cardimage3, alt: 'cardimage', content: 'Faculty & Research' },
-    { src: cardimage4, alt: 'cardimage', content: 'Alumni Stories' },
-    { src: cardimage5, alt: 'cardimage', content: 'Student Stories' },
+    { src: cardimage1, alt: 'cardimage', content: 'Prospective Students', href:'../prospective-students' },
+    { src: cardimage2, alt: 'cardimage', content: 'Current Students', href: '../current-students' },
+    { src: cardimage3, alt: 'cardimage', content: 'Faculty & Research', href: '../our-programs' },
+    { src: cardimage4, alt: 'cardimage', content: 'Alumni Stories', href: '../our-programs' },
+    { src: cardimage5, alt: 'cardimage', content: 'Student Stories', href: '../our-programs' },
 ];
 
 export default function Bodysection() {
@@ -69,9 +70,12 @@ export default function Bodysection() {
                                     }}
                                 >
                                     <Image className="rounded-3xl w-full h-full" src={cardimage.src} alt={cardimage.alt} />
-                                    <button className="px-3 bottom-2 left-5 absolute py-2 bg-black text-white flex items-center">
-                                        {cardimage.content} <Image className="w-[30px] h-[30px]" src={arrowright} alt="arrow" />
-                                    </button>
+                                    <Link href={cardimage.href}>
+                                        <button className="px-3 bottom-2 left-5 absolute py-2 bg-black text-white flex items-center">
+                                            {cardimage.content} <Image className="w-[30px] h-[30px]" src={arrowright} alt="arrow" />
+                                        </button>
+                                    </Link>
+                                    
                                 </div>
                             ))}
                         </div>
@@ -89,7 +93,7 @@ export default function Bodysection() {
                         <div className="flex flex-col lg:flex-row justify-center items-center w-full lg:w-auto gap-4 mb-10">
                             <div className="text-center">
                                 <Image className="w-[300px] h-[200px]" src={ourprograms} alt="ourprogram" />
-                                <button className="bg-customeYellow w-[300px] underline text-white h-[40px]">Our Programs</button>
+                                <button className="bg-customeYellow w-[300px] underline text-white h-[40px]"><Link href="../our-programs">Our Programs</Link></button>
                             </div>
                             <div className="text-center">
                                 <Image className="w-[300px] h-[200px]" src={educationalresources} alt="educational resources" />
@@ -97,7 +101,7 @@ export default function Bodysection() {
                             </div>
                             <div className="text-center">
                                 <Image className="w-[300px] h-[200px]" src={ourinnovations} alt="ourinnovations" />
-                                <button className="bg-customeYellow w-[300px] underline text-white h-[40px]">Our Innovations</button>
+                                <button className="bg-customeYellow w-[300px] underline text-white h-[40px]"><Link href="../our-innovations">Our Innovations</Link></button>
                             </div>
                         </div>
                     </div>
@@ -138,7 +142,9 @@ export default function Bodysection() {
                             <div className="mt-7 text-white lg:mt-44">
                                 <div className="font-bold">Dooter Aondoakaa</div>
                                 <div>Biomedical Engineering, class of 2026</div>
-                                <button className="border-customeYellow mt-4 mb-4 border px-2 py-1">FULL PROFILE</button>
+                                <button className="border-customeYellow mt-4 mb-4 border px-2 py-1"> <Link href="../student-profiles/dooter-aondoakaa">FULL PROFILE</Link></button>
+                                
+                                
                             </div>
                         </div>
                     </div>
