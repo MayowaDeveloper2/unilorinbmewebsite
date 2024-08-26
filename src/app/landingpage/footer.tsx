@@ -23,8 +23,8 @@ export default function Footer() {
                         </div>
                         <div>
                             <span className="text-black font-bold">Contact</span>
-                            <div className="mt-4 text-black">+2348128460866</div>
-                            <div className="mt-4 text-black">bmeunilorin@gmail.com</div>
+                            <div className="mt-4 text-black">+2348065672944</div>
+                            <div className="mt-4 text-black ">bmeunilorin@gmail.com</div>
                         </div>
                         <div className="md:ml-auto lg:ml-auto mt-6 md:mt-0 lg:mt-0">
                             <span className="text-black font-bold">Support</span>
@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-6 flex justify-center items-center">
-                    <span className="text-black font-bold">Copyright ©2024 Unilorin BME </span>
+                    <span className="text-black text-[12px] font-bold">Copyright ©2024 Unilorin BME. Developed by Santol Technologies </span>
                 </div>
             </footer>
         </>
