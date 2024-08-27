@@ -8,7 +8,7 @@ export default function Profile() {
         <div className='w-full lg:pt-24 pt-20 px-5 lg:px-20'>
             <div className='w-full items-center flex flex-col'>
                 <Image className='w-[200px] h-[200px] rounded-full' src={dooterprofile} alt="Dooter Aondoakaa" />
-                <span className='text-black'>Dooter Aondoakaa</span>
+                <span className='text-black font-bold'>Dooter Aondoakaa</span>
                 <div className='text-black'>Biomedical Engineering, Class of 2026</div>
             </div>
             <div className='text-black text-[20px] mt-10'>
