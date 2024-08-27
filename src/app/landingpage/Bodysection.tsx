@@ -4,10 +4,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import cardimage1 from '../images/prospectivestudnet.jpg';
-import cardimage2 from '../images/currentstudents.jpg';
-import cardimage3 from '../images/facultyresearch.jpg';
-import cardimage4 from '../images/alumnistories.jpg';
+import cardimage1 from '../images/biomedical university ilorin.jpeg';
+import cardimage2 from '../images/prospectivestudentunilorin.jpeg';
+import cardimage3 from '../images/dooter.jpeg';
+import cardimage4 from '../images/alumniunilorin.jpeg';
 import cardimage5 from '../images/studentstories.jpg';
 import ourprograms from '../images/biomedicalatwork.jpeg';
 import educationalresources from '../images/young-student-looking-book-library.jpg';
