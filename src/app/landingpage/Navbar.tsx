@@ -23,7 +23,7 @@ export default function Navabar () {
                 </div>
                 <ul className="hidden lg:flex lg:gap-5">
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link href="/">HOME</Link>
                     </li>
                     <li>
                         <Link href="../about">ABOUT</Link>

@@ -141,7 +141,7 @@ export default function Bodysection() {
                             </span>
                             <div className="mt-7 text-white lg:mt-44">
                                 <div className="font-bold">Dooter Aondoakaa</div>
-                                <div>Biomedical Engineering, class of 2026</div>
+                                <div>Biomedical Engineering, class of 2025</div>
                                 <button className="border-customeYellow mt-4 mb-4 border px-2 py-1"> <Link href="../student-profiles/dooter-aondoakaa">FULL PROFILE</Link></button>
                                 
                                 
