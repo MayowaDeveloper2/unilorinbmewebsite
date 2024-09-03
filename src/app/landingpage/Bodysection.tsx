@@ -107,7 +107,7 @@ export default function Bodysection() {
                     </div>
                 </div>
 
-                <div className="flex mt-3 mb-3 flex-col lg:flex-row lg:px-20 px-10">
+                {/* <div className="flex mt-3 mb-3 flex-col lg:flex-row lg:px-20 px-10">
                     <div className="flex-col w-[340px] lg:w-full flex">
                         <div className="text-2xl text-black font-bold mb-4">Upcoming Events</div>
                         <div className="flex flex-col lg:flex-row">
@@ -128,7 +128,7 @@ export default function Bodysection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col lg:flex-row bg-customBlue lg:h-screen h-full">
                     <div className="flex flex-col lg:flex-row">
